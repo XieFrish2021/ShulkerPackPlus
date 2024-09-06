@@ -1,0 +1,3 @@
+[plugin]
+enable="Plugin was enable!"
+disable="Plugin was disable."

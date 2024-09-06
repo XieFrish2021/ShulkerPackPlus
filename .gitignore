@@ -1,0 +1,51 @@
+# JVM crash related
+core.*
+hs_err_pid*
+
+# Intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# netbeans
+nbproject/
+nbactions.xml
+
+# Gradle
+!gradle-wrapper.jar
+.gradle/
+build/
+*/build/
+
+# we use maven!
+build.xml
+
+# Maven
+log/
+target/
+dependency-reduced-pom.xml
+
+# Mac
+.DS_Store/
+.DS_Store
+
+# vim
+.*.sw[a-p]
+
+# Linux temp files
+*~
+
+# other
+run/
+
+# buildSrc
+buildSrc/.gradle
+buildSrc/build
+.kotlin/

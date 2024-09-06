@@ -1,0 +1,16 @@
+[paper]
+version="1.20.6-R0.1-SNAPSHOT"
+
+[project]
+group="me.coderfrish.shulkerPack"
+version="1.0.0"
+category="unoffical"
+name="shulkerPackPlus"
+author="Frish2021"
+description="A Bukkit plugin for enhancing shulker boxes."
+
+[plugin]
+mainClass="me.coderfrish.shulkerPack.ShulkerPackMain"
+
+[develop]
+debug=false
