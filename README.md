@@ -5,3 +5,10 @@
 > 支持服务端(*)
 
 > 作者: Frish2021
+
+## 如何构建
+输入指令
+```bash
+cd script
+./buildPlugin
+```
