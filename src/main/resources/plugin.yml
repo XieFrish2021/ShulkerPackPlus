@@ -4,7 +4,6 @@ main: ${pluginMain}
 description: ${pluginDescription}
 author: ${pluginAuthor}
 
-api-version: '1.20'
 folia-supported: true
 
 permissions:
