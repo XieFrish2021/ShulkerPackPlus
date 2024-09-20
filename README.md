@@ -12,3 +12,4 @@
 cd script
 ./buildPlugin
 ```
+最终构建在`target`文件夹里面
