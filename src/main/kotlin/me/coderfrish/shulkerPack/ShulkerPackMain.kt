@@ -1,5 +1,6 @@
 package me.coderfrish.shulkerPack
 
+import me.coderfrish.shulkerPack.listener.MenuEventListener
 import me.coderfrish.shulkerPack.logger.ConsoleLogger
 import me.coderfrish.shulkerPack.manager.CommandManager
 import me.coderfrish.shulkerPack.manager.ConfigurationManager
@@ -22,8 +23,8 @@ class ShulkerPackMain: AbstractPlugin() {
     lateinit var configurationManager: ConfigurationManager
 
     /* Post enable */
-    private lateinit var listenerManager: ListenerManager
-    private lateinit var commandManager: CommandManager
+//    private lateinit var listenerManager: ListenerManager
+//    private lateinit var commandManager: CommandManager
 
     override fun init(): Boolean {
         try {
@@ -54,8 +55,9 @@ class ShulkerPackMain: AbstractPlugin() {
 
     override fun enable() {
         instance = this
-        listenerManager = ListenerManager(this)
-        commandManager = CommandManager(this)
+//        listenerManager = ListenerManager(this)
+//        commandManager = CommandManager(this)
+        this.pluginMgr.registerEvents(MenuEventListener(), this)
 
         logger.info(Component.text(languageManager.get("plugin.enable")))
     }

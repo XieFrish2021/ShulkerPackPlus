@@ -7,6 +7,7 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.plugin.java.JavaPlugin
 import org.reflections.Reflections
 
+@Deprecated(message = "null.")
 class CommandManager(plugin: JavaPlugin) {
     init {
         val classes = Reflections(ShulkerPackMain.BASE_PACKAGE).getTypesAnnotatedWith(CommandExecute::class.java)

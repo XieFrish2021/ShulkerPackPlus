@@ -6,6 +6,7 @@ import org.bukkit.event.Listener
 import org.bukkit.plugin.java.JavaPlugin
 import org.reflections.Reflections
 
+@Deprecated(message = "null.")
 class ListenerManager(plugin: JavaPlugin) {
     init {
         val classes = Reflections(ShulkerPackMain.BASE_PACKAGE).getTypesAnnotatedWith(EventListener::class.java)

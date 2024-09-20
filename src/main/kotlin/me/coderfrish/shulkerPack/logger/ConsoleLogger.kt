@@ -22,10 +22,10 @@ data class ConsoleLogger(private val name: String, val plugin: JavaPlugin) {
 
     private fun logger(component: Component, color: NamedTextColor) {
         consoleSender.sendMessage(
-            colorText(NamedTextColor.BLACK, "[")
+            colorText(NamedTextColor.WHITE, "[")
                 .append(colorText(color, name))
-                .append(colorText(NamedTextColor.BLACK, "]"))
-                .append(colorText(NamedTextColor.BLACK, " - "))
+                .append(colorText(NamedTextColor.WHITE, "]"))
+                .append(colorText(NamedTextColor.WHITE, " - "))
                 .append(component)
         )
     }
